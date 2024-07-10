@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Basic Styling */
@@ -71,6 +72,7 @@ section {
 
 .btn:hover {
     background-color: #555;
+    transform: scale(1.05) translateY(-3px);
 }
 
 .services ul {
@@ -80,6 +82,30 @@ section {
 
 .services ul li {
     margin-bottom: 10px;
+}
+.services a::before
+{
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+.services a:hover
+{
+    transform: scale(1.05) translateY(-5px);
+    background-color: #555;
+}
+.services a
+{
+    /* border: 2px solid cyan; */
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px ;
+    border-radius: 6px;
+    border-bottom: none;
+}
+.services a::after
+{
+    color: white;
 }
 
 footer {
