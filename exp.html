@@ -1,0 +1,107 @@
+<!-- Build a html page and prepare proper layout of page using CSS.
+You may keep Header, Footer, Menu, Body and Navigation
+section on your page. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            /*font-family: Arial, sans-serif;*/
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .menu {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .body {
+            font-family: 'MyFont';
+            padding: 10px;
+            margin: 10px;
+        }
+
+        @font-face {
+            font-family: 'MyFont';
+            src: url('LoveDays.ttf');
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="body">
+        <h2>Body</h2>
+        <p>Restaurant Menus should reflect they style and atmosphere of a restaurant. When developing one care should be
+            taken to provide customers with a sense of what the restaurant is all about. If the establishment is a
+            family restaurant the menu should have family friendly entrees as well as visually appeal to those people
+            that have families. If it is a formal restaurant the menu should have more chic entrees and the look of the
+            menu should be more precise and conservative.
+            <br>
+            <br>
+            Menu:
+        <menu>
+            <li>Paneer Tikka Masala</li>
+            <li>Paneer Bhurji</li>
+            <li>Paneer Handi</li>
+        </menu>
+        </p>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
